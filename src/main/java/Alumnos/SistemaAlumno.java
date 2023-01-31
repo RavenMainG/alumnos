@@ -1,7 +1,5 @@
 package Alumnos;
 
-import java.lang.ProcessBuilder.Redirect.Type;
-import java.lang.invoke.TypeDescriptor;
 import java.util.Scanner;
 
 public class SistemaAlumno {
@@ -58,21 +56,31 @@ public class SistemaAlumno {
         for( int iterador = 0; iterador < alumnos.length; iterador++){
             System.out.println("Alumnos # " + (iterador + 1));
             alumnos[iterador] = new Alumno();
-
+    
             System.out.println("Ingresa el nombre: ");
             alumnos[iterador].setNombre(sc.next());
+
+            sc.nextLine();
 
             System.out.println("Ingresa los apellidos: ");
             alumnos[iterador].setApellidos(sc.next());
 
+            sc.nextLine();
+
             System.out.println("Ingresa la matricula: ");
             alumnos[iterador].setMatricula(sc.next());
+
+            sc.nextLine();
 
             System.out.println("Ingresa el numero de telefono: ");
             alumnos[iterador].setNumeroTelefono(sc.next());
 
+            sc.nextLine();
+
             System.out.println("Ingresa la edad: ");
             alumnos[iterador].setEdad(sc.nextInt());
+
+            sc.nextLine();
 
         }
     }
