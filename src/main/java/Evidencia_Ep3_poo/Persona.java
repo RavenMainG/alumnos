@@ -15,7 +15,7 @@ public class Persona {
 
     public void setEstadoCivil(String estadoCivil) {
         this.estadoCivil = estadoCivil;
-    }
+    } 
 
     public double getIngresosAnuales() {
         return ingresosAnuales;
@@ -37,5 +37,7 @@ public class Persona {
             return (ingresosAnuales * 0.08);
         }
         return (ingresosAnuales * 0.06);
-    }    
+    }
+
+   
 }
